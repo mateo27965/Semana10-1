@@ -10,6 +10,6 @@ npx sequelize model:create --name movie --attributes title:string,genres:string
 /*
 Para cargar la data
 */
-copy countries(id,name) from 'C:\Users\l34203\Desktop\PW-SEM10\Ayuda\s10-country.csv' DELIMITER ';' CSV HEADER;
-copy directors(id,first_name,last_name,gender,email,"countryId") from 'D:/tmp/data/s10-director-test.csv' DELIMITER ';' CSV HEADER;
-copy movies(id,title,genres,"countryId","directorId") from 'D:/tmp/data/s10-movie-test.csv' DELIMITER ';' CSV HEADER;
+copy countries(id,name) from 'C:\Users\mateh\OneDrive\Escritorio\Semana10-1\Ayuda\s10-country.csv' DELIMITER ';' CSV HEADER;
+copy directors(id,first_name,last_name,gender,email,"countryId") from 'C:\Users\mateh\OneDrive\Escritorio\Semana10-1\Ayuda\s10-director-test.csv' DELIMITER ';' CSV HEADER;
+copy movies(id,title,genres,"countryId","directorId") from 'C:\Users\mateh\OneDrive\Escritorio\Semana10-1\Ayuda\s10-movie-test.csv' DELIMITER ';' CSV HEADER;

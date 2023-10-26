@@ -11,8 +11,9 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      
+      // 1 A MUCHOS DESDE LA TABLA "COUNTRIES"
       this.hasMany(models.movie,{foreignKey: 'countryId'})
-      // 1 A MUCHOS
       this.hasMany(models.director, {foreignKey:'countryId'})
       
 

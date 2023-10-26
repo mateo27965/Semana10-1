@@ -11,7 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      // el director tiene muchas peliculas
+
+      // el director tiene muchas peliculas - 1 A MUCHOS
       this.hasMany(models.movie, {foreignKey:'directorId'})
     }
   }

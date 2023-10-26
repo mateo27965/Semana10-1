@@ -40,7 +40,7 @@ ruta.get('/d2' , async(req,res)=>{
         console.log("PAIS: ", p.get('id'), p.get('name'))
         let directores = p.get('directors')
         directores.forEach(d=>{
-            console.log("DIRECTOR ", d.get('first_name'), d.get('last_name'))
+            console.log("DIRECTOR: ", d.get('first_name'), d.get('last_name'))
         })
     });
 })

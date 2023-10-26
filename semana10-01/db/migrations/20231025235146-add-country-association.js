@@ -32,7 +32,7 @@ module.exports = {
      * await queryInterface.dropTable('users');
      */
     return queryInterface.removeColumn(
-      "movie", // name of Source model
+      "movies", // name of Source model
       "countryId" // key we want to remove
     );
   }

@@ -13,8 +13,11 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       
       // poner relacion en sentido inverso de la pelicula hacia el director.
+      // es el inverso de 1 a MUCHOS -> MUCHOS A 1
       // pais y directores es como que su apodo
+      // la relación se va a llamar pais
       this.belongsTo(models.country,{as:'pais',foreignKey:'countryId'})
+      // la relación se va a llamar directores
       this.belongsTo(models.director,{as:'directores',foreignKey:'directorId'})
 
     }

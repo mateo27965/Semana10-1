@@ -15,7 +15,7 @@ module.exports = {
       {
         type: Sequelize.INTEGER,
         references: {
-          model: "directors", // name of Target model
+          model: "countries", // name of Target model
           key: "id", // key in Target model that we're referencing
         },
         onUpdate: "CASCADE",
