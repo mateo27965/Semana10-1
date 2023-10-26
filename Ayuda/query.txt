@@ -1,0 +1,15 @@
+/*
+Para crear los modelos
+*/
+
+npx sequelize model:create --name country --attributes name:string
+npx sequelize model:create --name director --attributes first_name:string,last_name:string,gender:string,email:string
+npx sequelize model:create --name movie --attributes title:string,genres:string
+
+
+/*
+Para cargar la data
+*/
+copy countries(id,name) from 'C:\Users\l34203\Desktop\PW-SEM10\Ayuda\s10-country.csv' DELIMITER ';' CSV HEADER;
+copy directors(id,first_name,last_name,gender,email,"countryId") from 'D:/tmp/data/s10-director-test.csv' DELIMITER ';' CSV HEADER;
+copy movies(id,title,genres,"countryId","directorId") from 'D:/tmp/data/s10-movie-test.csv' DELIMITER ';' CSV HEADER;
